@@ -1,0 +1,13 @@
+{
+  "name": "electron-hello",
+  "version": "0.0.1",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "build": "electron-packager . electron-test --platform=win32 --arch=x64 --overwrite --out=build"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-packager": "latest"
+  }
+}

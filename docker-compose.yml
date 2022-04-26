@@ -1,0 +1,10 @@
+services:
+  s-electron-hello:
+    container_name: c-electron-hello
+    image: i-electron-hello
+    hostname: electron
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ./src:/app/src
+      - ./build:/app/build
